@@ -1,0 +1,554 @@
+<html lang="ko"><head>
+  <title>Curriculum</title>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&amp;display=swap" rel="stylesheet">
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+   <script type="text/javascript">
+         $(function(){
+         $("ul.sub").hide();
+         $("ul.menu li").hover(function(){
+         $("ul:not(:animated)",this).slideDown("fast");
+            },
+            function(){
+         $("ul",this).slideUp("fast");
+            });
+      });   
+   </script>
+ 
+<style>
+  #container{display: inline-block;
+   }
+       ul.menu li{ display: inline-block;
+         float: left;
+         width: 120px;
+         height: 48px;
+          }
+      ul.menu li a{
+         display: block;
+         line-height: 48px;
+         text-indent: 25px;
+         font-weight: bold;
+         color: #eee;
+         text-decoration: none;
+         }
+      ul.menu li a:hover{
+         background-color: #EB3C41;
+         padding: 0px;
+         }
+      ul.menu{
+         padding-top: 20px;
+         zoom: 1;
+         }
+      ul{ padding:0;}
+      .sub{
+        margin-left: -30px;
+      }
+
+*{ font-family: 'Noto Sans KR', sans-serif;
+    margin:0;
+   box-sizing: border-box;
+    }
+  {
+    box-sizing: border-box;
+     margin:0px;
+     padding:0px;
+    }
+  body {
+  margin: 0;
+}
+
+/*네비바*/
+.navibar{
+  width: 1920px;
+  height: 88px;
+  background-color:#3D3A37;
+}
+.navibar #logo{
+  line-height:100px;
+  padding-left: 32px;
+}
+.navibar #menu{
+  float:right;
+  list-style:none;
+  padding:0;
+  margin:0;
+  display: inline-block;
+   padding-right: 32px;
+}
+ul{padding: 0;}
+
+.navibar #menu li{
+  float:left;
+  margin-left:30px;
+  line-height:88px;
+}
+.navibar #menu li a{
+  color:#FFFFFF;
+  font-size:18px;
+  text-decoration:none;
+  font-weight: ;
+  }
+.navibar #menu li a:hover{
+    background-color: #EB3C41;
+}
+  b{
+    background-color:#eb3c41;
+    padding: 32px;
+  }
+
+/*헤더*/
+    .header{
+        height: 600px;
+        background-image: url("http://img.hani.co.kr/imgdb/resize/2017/0113/00501912_20170113.JPG");
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center center;
+        filter: brightness(%); 
+    width: 1920px;
+    margin-bottom: 100px;
+  }
+
+/*미디*/
+.Media_Design_Engineering {
+  margin-left: 204px;
+  margin-bottom: 150px;
+  padding: 10px;
+}
+.Media_Design_Engineering h2{
+  color: #FF3366;  
+  margin-bottom: 10px;
+}
+.Media_Design_Engineering h3{
+  margin-bottom: 10px;
+}
+.Media_Design_Engineering h4{
+  margin-bottom: 10px;
+}
+
+/*커리큘럼*/
+    .curri-table {
+        display: table;
+        margin:0 auto;
+        font-size: 12px;
+        width:90%;
+        border-spacing: 10px;
+        text-align: center;
+        background-color: white;
+        }
+
+    td {
+        text-align: center;
+        vertical-align: middle;
+        width:120px;
+        height: 40px;
+        padding:5px;
+        background-color:white;
+        border-radius: 5%;
+        }
+
+/*과목구분*/
+    .table-common-sub{
+        background-color: #CCCCCC;
+        border: 1px solid black;
+        color:black;
+        }
+
+    .table-major-sub{
+        border: 2px solid #FF3366;
+        background-color:white;
+        color:black;
+        }
+/*학기 CSS*/
+    .cemester{
+    font-weight: 800;
+    }
+/*병합행CSS*/
+
+    .table-row {
+        text-align:center;
+        vertical-align: center;
+        padding: 0px 10px;
+        width:100px;
+        height: 60px;
+        background-color: #FF3366;
+        color: white;
+        }    
+
+/*hover CSS*/
+    td.table-major-sub:hover{
+        background:black;
+        opacity: 0.8;
+        transition:.5s;
+        color:white;
+    }
+
+/*구분*/
+    .common-icon{
+        float:right;
+        width:100px;
+        height:40px;
+        font-size:12px;
+        padding:0 auto;
+        margin-top:50px;
+        border: 1px solid black;
+        background-color: #CCCCCC;
+        text-align: center;
+        border-radius: 5%;
+        margin-right:5%;
+    }
+    .major-icon{
+        float:right;
+        width:100px;
+        height:40px;
+        font-size:12px;
+        padding:0 auto;
+        margin-top:50px;
+        margin-right:5px;
+        border: 2px solid #FF3366;
+        text-align: center;
+        border-radius: 5%;
+    }
+    .common-icon p{ padding-top: 10px; }
+    .major-icon p{ padding-top: 10px; }
+
+/*학부 이벤트*/
+    #work-wrapper{
+    font-family: 'Noto Sans KR', sans-serif;
+    height: 500px;
+    width: px;
+
+    }
+
+    #img-frame{
+        width:1116px;
+        height: 300px;
+        background-color: ;
+        position: relative;
+        top:10px;
+        left: 404px;
+
+    }
+        #work-wrapper h1{
+            font-size: 40px;
+            margin-top: 74px;
+            margin-bottom: 20px;
+            text-align: px;
+            margin-left: 400px;
+        }
+
+        .img-wrapper{
+            width: 350px; 
+            height: 263px; 
+            position: absolute;
+            cursor: pointer;
+        }
+            .img-wrapper img{
+                width: inherit;
+                height: inherit;
+            }
+
+                .img1{
+                    top: 0px;
+                    left: 0px;
+                }
+                .img2{
+                    top: 0px;
+                    left: 383px;
+                }
+                .img3{
+                    top: 0px;
+                    right: 0px;
+                }
+
+                .work_subject {
+                    margin-top: 20px;
+                    font-size: 18px;
+                }
+                .work_name {
+                    font-size: 16px;
+                }
+
+
+/*푸터*/
+  #footer{
+      width:1920px;
+      padding: 50px;
+      background-color: #4B4B4B;
+      text-decoration: none;
+      color: #f6f6f6;
+      padding-left: 204px;
+      margin-top: 1500px;
+    }   
+    a{
+      text-decoration: none;
+    color: #f6f6f6;}   
+
+ .media-image_1 img{ 
+      width: 170px;
+      height: 32px;
+    }
+    h1{
+      margin-top: 150px;
+      padding-top: 150px;
+      margin-left: 120px;
+      font-size: 52px;
+    }
+
+</style>
+</head>
+
+<body>
+
+<!--네비바-->
+ <div class="navibar">
+      <a href="http://www.kpu.ac.kr/intro/intro03.html" id="logo">
+        <img src="https://i.ibb.co/Gx69F0K/2.png" height="35">
+      </a>
+      <ul id="menu">
+        <li><a href="sns.html">sns</a></li>
+        <div id="container">
+   <ul class="menu">
+       <li><a href="index.html">학부소개</a>
+         <ul class="sub" style="display: none;">
+            <li><a href="교육과정.html">교육과정</a></li>
+         </ul>
+         </li>
+   </ul></div>
+        <li><a href="공모전&amp;졸업작품.html">공모전&amp;졸업작품</a></li>
+        <li><a href="시설소개2.html">시설소개</a></li>
+        <li><a href="뉴스&amp;이벤트.html">뉴스&amp;이벤트</a></li>
+      </ul>
+ </div>
+
+<!--헤더-->
+    <div class="header"></div>
+
+<!--미디-->
+<div class="Media_Design_Engineering">
+      <h2>Media Design Engineering</h2><br>
+      <h3>미디어디자인공학전공</h3>
+      <h4>사용자 중심 디자인 원리에 기반하여 인터랙티브 미디어를 구현할 수 있는 실무형 인재육성</h4>
+      <p>모바일 앱, 웹, 체감형 콘텐츠를 활용한 인터랙티브 미디어를 구현하기 위해 사용자 조사와 분석, UX/UI, 콘텐츠 기획, 2D/3D 그래픽 디자인, 프로그래밍 개발 과정을 통합적으로 수행할 수 있는 디자이너를 양성합니다.</p>  
+</div>
+
+<!--커리큘럼-->
+<table class="curri-table">
+    <tbody>
+    <tr class="cemester">
+    <td>&nbsp;</td>
+    <td>1학년 1학기</td>
+    <td>1학년 2학기</td>
+    <td>2학년 1학기</td>
+    <td>2학년 2학기</td>
+    <td>3학년 1학기</td>
+    <td>3학년 2학기</td>
+    <td>4학년 1학기</td>
+    <td>2학년 2학기</td>
+    </tr>
+
+<!--1열:Graphic Design-->
+    <tr>
+    <td class="table-row" rowspan="2">Graphic Design</td>
+    <td class="table-common-sub">2D 그래픽 기초(Illustrator)</td>
+    <td class="table-common-sub"> 2D 그래픽 응용(Photoshop)</td>
+    <td class="table-common-sub">편집 디자인</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>영상 편집 디자인(Premiere)</td>
+    <td>모션 그래픽 응용(After Effects)</td>
+    <td>3D 애니메이션(Cinema4D)</td>
+    </tr>
+    <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="table-major-sub"href="" onmouseover="this.innerHTML='TOOLS: Protopie, Xd'" onmouseout="this.innerHTML='GUI 요소 디자인'" style="text-decoration: none; transition:0.5s;">GUI 요소 디자인</td>
+    <td class="table-major-sub" href="" onmouseover="this.innerHTML='TOOLS: Ai, Ps, Xd'" onmouseout="this.innerHTML='웹디자인'" style="text-decoration: none; transition:0.5s;">웹디자인</td>
+    <td>모바일 디자인</td>
+    <td class="table-common-sub">인터페이스 프로토타이핑(Protopie)/td&gt;
+    </td><td>UI시스템 디자인(Figma)</td>
+    <td>&nbsp;</td>
+    </tr>
+
+<!--2열:Interactive Media Development-->    
+    <tr>
+    <td class="table-row" rowspan="2">Interactive Media Development</td>
+    <td>미디어 프로그래밍(p5.js)</td>
+    <td>&nbsp;</td>
+    <td class="table-major-sub"href="" onmouseover="this.innerHTML='TOOLS:Keyshot'" onmouseout="this.innerHTML='웹 퍼블리싱 기초(HTML+CSS)'" style="text-decoration: none; transition:0.5s;>웹 퍼블리싱 기초(HTML+CSS)</td>
+    <td class="table-major-sub" href="" onmouseover="this.innerHTML='TOOLS: Rihno'" onmouseout="this.innerHTML='웹 퍼블리싱 응용'" style="text-decoration: none; transition:0.5s;>웹 퍼블리싱 응용(HT ML+CSS)</td>
+    <td>인터랙티브 웹(JavaScript)</td>
+    <td class="table-major-sub">웹어플리케이션 구현 기초(jQuery)</td>
+    <td>웹어플리케이션 구현 응용(Node.js)</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td>&nbsp;</td>
+    <td class="table-major-sub"href="" onmouseover="this.innerHTML='TOOLS: NX 10.0'" onmouseout="this.innerHTML='3D 컨텐츠모델링 기초 (3D5 MAX)'" style="text-decoration: none; transition:0.5s;">&gt;3D 컨텐츠모델링 기초 (3D5 MAX)</td>
+    <td>3D 컨텐츠모델링 응용 (3D5 MAX)</td>
+    <td class="table-major-sub" href="" onmouseover="this.innerHTML='TOOLS: Ai, Ps, Xd'" onmouseout="this.innerHTML='웹디자인'" style="text-decoration: none; transition:0.5s;">AR 디자인</td>
+    <td class="table-major-sub"href="" onmouseover="this.innerHTML='TOOLS: Chinema 4D'" onmouseout="this.innerHTML='VR 컨텐츠디자인 기초(Three.js)'" style="text-decoration: none; transition:0.5s;">VR 컨텐츠디자인 기초(Three.js)</td>
+    <td>VR 컨텐츠디자인 응용(WebXR)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+
+<!--3열:Design Fundamental-->    
+    <tr>
+    <td class="table-row" rowspan="3">Design Fundamental</td>
+    <td class="table-common-sub">디자인과 창조(교양)</td>
+    <td class="table-common-sub">디자인 방법론</td>
+    <td class="table-common-sub">사진영상기법</td>
+    <td>미디어 컬러플래닝</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="table-common-sub">디지털 마케팅</td>
+    <td class="table-common-sub">디자인 매니지먼트</td>
+    </tr>
+    <tr>
+    <td class="table-common-sub">디자인문화 리서치(교양)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+    <tr>
+    <td class="table-common-sub">발상기법</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+
+<!--4열:UX&Service Design-->    
+    <tr>
+    <td class="table-row" rowspan="2">UX &amp; Service Design</td>
+    <td class="table-common-sub">드로잉 기초</td>
+    <td>경험 디자인</td>
+    <td>&nbsp;</td>
+    <td>사용자조사 분석기법</td>
+    <td class="table-major-sub"href="" onmouseover="this.innerHTML='TOOLS: xd, protopie'" onmouseout="this.innerHTML='인터페이스 디자인(PUI)'" style="text-decoration: none; transition:0.5s;">인터페이스 디자인(PUI)</td>
+    <td class="table-major-sub"href="" onmouseover="this.innerHTML='TOOLS:Ps, Xd'" onmouseout="this.innerHTML='선행인터랙션디자인'" style="text-decoration: none; transition:0.5s;">선행인터랙션디자인</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="table-common-sub">디자인기획과 창업</td>
+    <td class="table-common-sub">서비스디자인 업무</td>
+    <td class="table-common-sub">캡스톤디자인 기획</td>
+    <td class="table-common-sub">캡스톤디자인 1</td>
+    <td class="table-common-sub">캡스톤디자인 2</td>
+    </tr>
+    </tbody>
+    </table>
+
+    
+<div class="common-icon">
+        <p>공통교과</p>
+    </div>
+<div class="major-icon">
+        <p>필수교과</p>
+</div>
+
+
+<!--전공필수 과제물-->
+<div id="work-wrapper">
+   <h1 class="work-title1">인터페이스 디자인 과제물</h1>
+        <div id="img-frame">
+
+            <!--첫번째 줄-->
+            <div class="img-wrapper img1">
+                <img class="work_image" src="https://pgnqdrjultom1827145.cdn.ntruss.com/img/0f/4b/0f4be5d45b4edddd2c76295009a9c3cf66f867ccbda121808e1ba45b952e8c6a_v1.jpg">
+                <div class="work_subject">전유미</div>
+                <div class="work_name">BABY INCUBATOR</div>
+            </div>
+
+            <div class="img-wrapper img2">
+                <img class="work_image" src="https://i.pinimg.com/originals/3b/70/16/3b70167666d709350c843d265f1af7c3.png">
+                <div class="work_subject">배예원</div>
+                <div class="work_name">BABY INCUBATOR</div>
+            </div>
+
+            <div class="img-wrapper img3">
+                <img class="work_image" src="https://pgnqdrjultom1827145.cdn.ntruss.com/img/be/b5/beb57fb54c8cceb6ad711d1e4d3b9539e28bef18fdb81c302218785d56a900de_v1.jpg">
+                <div class="work_subject">김채원</div>
+                <div class="work_name">BABY INCUBATOR</div>
+            </div>
+        </div>
+
+   <h1 class="work-title1">3D 컨텐츠모델링 과제물</h1>
+        <div id="img-frame">
+
+            <!--두번째 줄-->
+            <div class="img-wrapper img1">
+                <img class="work_image" src="https://i.postimg.cc/C5Tny4Tb/3d1.png">
+                <div class="work_subject">전유미</div>
+                <div class="work_name">BABY INCUBATOR</div>
+            </div>
+
+            <div class="img-wrapper img2">
+                <img class="work_image" src="https://i.postimg.cc/xdBcHPdB/3d2.png">
+                <div class="work_subject">배예원</div>
+                <div class="work_name">BABY INCUBATOR</div>
+            </div>
+
+            <div class="img-wrapper img3">
+                <img class="work_image" src="https://i.postimg.cc/pXkrkvTf/3d3.png">
+                <div class="work_subject">김채원</div>
+                <div class="work_name">BABY INCUBATOR</div>
+            </div>
+        </div>
+
+   <h1 class="work-title1">웹디자인 과제물</h1>
+        <div id="img-frame">
+
+            <!--세번째 줄-->
+            <div class="img-wrapper img1">
+                <img class="work_image" src="https://simplep.net/wp-content/uploads/2018/02/PPT-design-inspiration-website-layout-title.jpg">
+                <div class="work_subject">전유미</div>
+                <div class="work_name">BABY INCUBATOR</div>
+            </div>
+
+            <div class="img-wrapper img2">
+                <img class="work_image" src="https://cdn.dribbble.com/users/1726280/screenshots/10474951/creative_travel_website_design.png?compress=1&resize=400x300">
+                <div class="work_subject">배예원</div>
+                <div class="work_name">BABY INCUBATOR</div>
+            </div>
+
+            <div class="img-wrapper img3">
+                <img class="work_image" src="https://www.bloter.net/wp-content/uploads/2015/10/ibm_iot_800-800x533.jpg">
+                <div class="work_subject">김채원</div>
+                <div class="work_name">BABY INCUBATOR</div>
+            </div>
+        </div>
+
+</div>
+
+
+<!--푸터-->
+<div id="footer">
+    <div class="container">
+      <div class="sidebar-column col-md-12">
+          <aside id="media_image-1" class="widget widget_media_image"></aside>
+
+         <div class="textwidget"><p><a href="http://ibook.kpu.ac.kr/Viewer/OZKGMW4FRY2L" target="_blank" rel="noopener noreferrer"><strong>개인정보처리방침</strong></a> | <strong><a href="http://www.kpu.ac.kr/front/boardlist.do?bbsConfigFK=575&amp;amp;siteGubun=14&amp;amp;menuGubun=1" target="_blank" rel="noopener noreferrer">개인정보목적외이용제공대장</a></strong> | <strong><a href="http://www.kpu.ac.kr/gopage/main/gonomalnotice.jsp?siteGubun=1&amp;bbsConfigFK=357&amp;pkid=61538&amp;menuGubun=1" target="_blank" rel="noopener noreferrer">정보보호실천수칙</a></strong></p>
+         </div><br>
+    <p>15073 경기도 시흥시 산기대학로 237 (정왕동) 한국산업기술대학교 공학관 A동<br>
+    학부 행정실: 031-8041-0660 | 학교대표전화: 031-8041-1000 | 입학안내: 1588-2036</p><br>
+    <p>Copyright© 2020 KPU DESIGN ENGINEERING. ALL RIGHTS RESERVED.</p>
+          
+       </div>
+    </div>  
+</div>        
+
+</body></html>

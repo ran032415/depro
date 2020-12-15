@@ -1,0 +1,391 @@
+<html lang="ko"><head>
+    <title>뉴스&이벤트</title>
+    <meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+   <script type="text/javascript">
+         $(function(){
+         $("ul.sub").hide();
+         $("ul.menu li").hover(function(){
+            $("ul:not(:animated)",this).slideDown("fast");
+            },
+            function(){
+               $("ul",this).slideUp("fast");
+            });
+      });   
+   </script>
+ 
+<style>
+  #container{display: inline-block;
+   }
+       ul.menu li{ display: inline-block;
+         float: left;
+         width: 120px;
+         height: 48px;
+          }
+      ul.menu li a{
+         display: block;
+         line-height: 48px;
+         text-indent: 25px;
+         font-weight: bold;
+         color: #eee;
+         text-decoration: none;
+         }
+      ul.menu li a:hover{
+         background-color: #EB3C41;
+         padding: 0px;
+         }
+      
+      ul.menu{
+         padding-top: 20px;
+         zoom: 1;
+         }
+      ul{ padding:0;}
+
+      .sub{
+        margin-left: -30px;
+      }
+
+*{ font-family: 'Noto Sans KR', sans-serif;
+    margin:0;
+   box-sizing: border-box;
+    }
+  {
+    box-sizing: border-box;
+     margin:0px;
+     padding:0px;
+    }
+  body {
+  margin: 0;
+}
+/*네비바*/
+.navibar{
+  width: 100%;
+  height: 88px;
+  background-color:#3D3A37;
+}
+.navibar #logo{
+  line-height:100px;
+  padding-left: 32px;
+}
+.navibar #menu{
+  float:right;
+  list-style:none;
+  padding:0;
+  margin:0;
+  display: inline-block;
+   padding-right: 32px;
+}
+ul{padding: 0;}
+
+.navibar #menu li{
+  float:left;
+  margin-left:30px;
+  line-height:88px;
+}
+.navibar #menu li a{
+  color:#FFFFFF;
+  font-size:18px;
+  text-decoration:none;
+  font-weight: ;
+  }
+.navibar #menu li a:hover{
+    background-color: #EB3C41;
+}
+
+    b{
+      background-color:#eb3c41;
+      padding: 32px;
+    }
+
+/*헤더*/
+    .header{
+        height: 600px;
+        background-image: url("https://i.ibb.co/NZS9hzt/image.png");
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center center;
+        filter: brightness(%); 
+    width: 1920px;
+    }
+
+/*뉴스*/
+    .news-wrapper{
+    font-family: 'Noto Sans KR', sans-serif;
+    height: 1000px;
+    width: 1515px;
+    background-color: ;
+  display:inline-block;
+  margin-left: 204px;
+  margin-bottom:10px;
+    border-bottom: 1px solid gray;
+    }
+
+    .news-img-frame{
+        width: 1515px;
+        height: 1000px;
+        /*background-color: ;
+        top:10px;
+  margin-left: auto;
+  margin-right: auto;
+  display:inline-block;
+  display: block;
+        position: ;*/
+    }
+        .news-wrapper h1{
+            font-size: 40px;
+            margin-top: 74px;
+            margin-bottom: 20px;
+            text-align: ;
+        margin-left: 204px;
+        }
+        .news1{
+        display: inline-block;
+        width: 500px;
+        height: 300px;
+        margin-left: 204px;
+            cursor: pointer;
+        }
+       .news2{
+        display: inline-block;
+        width: 500px;
+        height: 300px;
+        float: right;
+        margin-right: 204px;
+            cursor: pointer;
+            }
+       .news_date {
+             margin-top: 20px;
+             font-size: 20px;
+                }
+       .news_summary {
+             font-size: 18px;
+                }
+
+/*수직선*/
+        .verticalLine {
+        border-left: thick solid #000000;
+        }
+            
+
+/*학부 이벤트*/
+    #event-wrapper{
+    font-family: 'Noto Sans KR', sans-serif;
+    height: 1250px;
+    width: px;
+    background-color: white;
+
+  margin-left: auto;
+  margin-right: auto;
+    }
+
+    #img-frame{
+        width:1116px;
+        height: 1200px;
+        background-color: ;
+        position: relative;
+        top:10px;
+        left: 404px;
+
+    }
+        #event-wrapper h1{
+            font-size: 40px;
+            margin-top: 74px;
+            margin-bottom: 20px;
+            text-align: px;
+            margin-left: 400px;
+        }
+
+        .img-wrapper{
+            width: 350px; 
+            height: 263px; 
+            position: absolute;
+            cursor: pointer;
+        }
+            .img-wrapper img{
+                width: inherit;
+                height: inherit;
+            }
+
+                .img1{
+                    top: 0px;
+                    left: 0px;
+                }
+                .img2{
+                    top: 0px;
+                    left: 383px;
+                }
+                .img3{
+                    top: 0px;
+                    right: 0px;
+                }
+                .img4{
+                    top: 446px;
+                    left: 0px;
+                }
+                .img5{
+                    top: 446px;
+                    left: 383px;
+                }
+                .img6{
+                    top: 446px;
+                    right: 0px;
+                }
+
+                .event_date {
+                    margin-top: 20px;
+                    font-size: 20px;
+                }
+                .event_summary {
+                    font-size: 18px;
+                }
+
+/*hover 설정*/     
+                .darkenss{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: inherit;
+                    height: inherit;
+                    background: #000000;
+                    opacity: 0;
+                    transition: all .5s linear;
+                }   
+                .img-wrapper:hover .darkness{
+                    opacity:0.5;
+                }
+
+/*푸터*/
+  #footer{
+      width:1920px;
+      padding: 50px;
+      background-color: #4B4B4B;
+      text-decoration: none;
+      color: #f6f6f6;
+      padding-left: 204px;
+    }   
+    a{
+      text-decoration: none;
+    color: #f6f6f6;}   
+
+.media-image_1 img{ 
+      width: 170px;
+      height: 32px;
+    }
+    h1{
+      margin-top: 150px;
+      padding-top: 150px;
+      margin-left: 120px;
+      font-size: 52px;
+    }
+
+</style>
+</head>
+
+<body>
+  
+<!--네비바-->
+ <div class="navibar">
+      <a href="http://www.kpu.ac.kr/intro/intro03.html" id="logo">
+        <img src="https://i.ibb.co/Gx69F0K/2.png" height="35">
+      </a>
+      <ul id="menu">
+        <li><a href="sns.html">sns</a></li>
+        <div id="container">
+   <ul class="menu">
+       <li><a href="index.html">학부소개</a>
+         <ul class="sub" style="display: none;">
+            <li><a href="교육과정.html">교육과정</a></li>
+         </ul>
+         </li>
+   </div>
+        <li><a href="공모전&졸업작품.html">공모전&amp;졸업작품</a></li>
+        <li><a href="시설소개2.html">시설소개</a></li>
+        <li><a href="뉴스&이벤트.html">뉴스&amp;이벤트</a></li>
+      </ul>
+ </div>
+
+<!--헤더-->
+    <div class="header"></div>
+
+<!--뉴스-->
+    <div class="news-wrapper">
+        <h1 class="news-title1">뉴스</h1>
+        <div class="news-img-frame">
+            <div class="news1">
+                <img class="news_image" src="https://file.mk.co.kr/meet/neds/2020/06/image_readtop_2020_652858_15930687134255431.jpg" width="500px">
+                <div class="news_date">2020. 7.15</div>
+                <div class="news_summary">미술대학 디자인과 누구누구 어쩌고 최우수논문상 수상 어쩌고</div>
+            </div>
+
+            <div class="news2">
+                <img class="news_image" src="https://i.ibb.co/kBjpNDr/1.png" width="500px">
+                <div class="news_date">2020. 7.15</div>
+                <div class="news_summary">미술대학 디자인과 누구누구 어쩌고 최우수논문상 수상 어쩌고</div>
+            </div>
+        </div>
+    </div>
+
+    
+
+<!--학부 이벤트-->
+    <div id="event-wrapper">
+        <h1 class="event-title1">학부 이벤트</h1>
+        <div id="img-frame">
+            <!--첫번째 줄-->
+            <div class="img-wrapper img1">
+                <img class="event_image" src="https://i.ibb.co/3M18CnW/1.png">
+                <div class="event_date">2020. 7.15</div>
+                <div class="event_summary">미술대학 디자인과 누구누구 어쩌고 최우수논문상 수상 어쩌고</div>
+            </div>
+
+            <div class="img-wrapper img2">
+                <img class="event_image" src="https://i.ibb.co/yqVpZDN/2.png">
+                <div class="event_date">2020. 7.15</div>
+                <div class="event_summary">미술대학 디자인과 누구누구 어쩌고 최우수논문상 수상 어쩌고</div>
+            </div>
+
+            <div class="img-wrapper img3">
+                <img class="event_image" src="https://i.ibb.co/crrv4bj/3.png">
+                <div class="event_date">2020. 7.15</div>
+                <div class="event_summary">미술대학 디자인과 누구누구 어쩌고 최우수논문상 수상 어쩌고</div>
+            </div>
+            <!--두번째 줄-->
+            <div class="img-wrapper img4">
+                <img class="event_image" src="https://i.ibb.co/0ys2ZNY/4.png">
+                <div class="event_date">2020. 7.15</div>
+                <div class="event_summary">미술대학 디자인과 누구누구 어쩌고 최우수논문상 수상 어쩌고</div>
+            </div>
+
+            <div class="img-wrapper img5">
+                <img class="event_image" src="https://i.ibb.co/60w2d1H/5.png">
+                <div class="event_date">2020. 7.15</div>
+                <div class="event_summary">미술대학 디자인과 누구누구 어쩌고 최우수논문상 수상 어쩌고</div>
+            </div>
+
+            <div class="img-wrapper img6">
+                <img class="event_image" src="https://i.ibb.co/5vRLcp9/6.png">
+                <div class="event_date">2020. 7.15</div>
+                <div class="event_summary">미술대학 디자인과 누구누구 어쩌고 최우수논문상 수상 어쩌고</div>
+            </div>
+        </div>
+    </div>
+
+<!--푸터-->
+<div id="footer">
+    <div class="container">
+      <div class="sidebar-column col-md-12">
+          <aside id="media_image-1" class="widget widget_media_image"></aside>
+
+         <div class="textwidget"><p><a href="http://ibook.kpu.ac.kr/Viewer/OZKGMW4FRY2L" target="_blank" rel="noopener noreferrer"><strong>개인정보처리방침</strong></a> | <strong><a href="http://www.kpu.ac.kr/front/boardlist.do?bbsConfigFK=575&amp;amp;siteGubun=14&amp;amp;menuGubun=1" target="_blank" rel="noopener noreferrer">개인정보목적외이용제공대장</a></strong> | <strong><a href="http://www.kpu.ac.kr/gopage/main/gonomalnotice.jsp?siteGubun=1&amp;bbsConfigFK=357&amp;pkid=61538&amp;menuGubun=1" target="_blank" rel="noopener noreferrer">정보보호실천수칙</a></strong></p>
+         </div><br>
+    <p>15073 경기도 시흥시 산기대학로 237 (정왕동) 한국산업기술대학교 공학관 A동<br>
+    학부 행정실: 031-8041-0660 | 학교대표전화: 031-8041-1000 | 입학안내: 1588-2036</p><br>
+    <p>Copyright© 2020 KPU DESIGN ENGINEERING. ALL RIGHTS RESERVED.</p>
+          </aside>
+       </div>
+    </div>  
+</div>
+
+</body></html>

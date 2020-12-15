@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>시설소개</title>
+  <meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+   <script type="text/javascript">
+         $(function(){
+         $("ul.sub").hide();
+         $("ul.menu li").hover(function(){
+            $("ul:not(:animated)",this).slideDown("fast");
+            },
+            function(){
+               $("ul",this).slideUp("fast");
+            });
+      });   
+   </script>
+ 
+<style>
+  #container{display: inline-block;
+   }
+       ul.menu li{ display: inline-block;
+         float: left;
+         width: 120px;
+         height: 48px;
+          }
+      ul.menu li a{
+         display: block;
+         line-height: 48px;
+         text-indent: 25px;
+         font-weight: bold;
+         color: #eee;
+         text-decoration: none;
+         }
+      ul.menu li a:hover{
+         background-color: #EB3C41;
+         padding: 0px;
+         }
+      ul.menu{
+         padding-top: 20px;
+         zoom: 1;
+         }
+      ul{ padding:0;}
+      .sub{
+        margin-left: -30px;
+      }
+
+*{ font-family: 'Noto Sans KR', sans-serif;
+    margin:0;
+   box-sizing: border-box;
+    }
+  {
+    box-sizing: border-box;
+     margin:0px;
+     padding:0px;
+    }
+  body {
+  margin: 0;
+}
+/*네비바*/
+.navibar{
+  width: 1920px;
+  height: 88px;
+  background-color:#3D3A37;
+}
+.navibar #logo{
+  line-height:100px;
+  padding-left: 32px;
+}
+.navibar #menu{
+  float:right;
+  list-style:none;
+  padding:0;
+  margin:0;
+  display: inline-block;
+   padding-right: 32px;
+}
+ul{padding: 0;}
+
+.navibar #menu li{
+  float:left;
+  margin-left:30px;
+  line-height:88px;
+}
+.navibar #menu li a{
+  color:#FFFFFF;
+  font-size:18px;
+  text-decoration:none;
+  font-weight: ;
+  }
+.navibar #menu li a:hover{
+    background-color: #EB3C41;
+}
+  b{
+    background-color:#eb3c41;
+    padding: 32px;
+  }
+
+/*헤더*/
+    .header{
+        height: 600px;
+        background-image: url("http://img.hani.co.kr/imgdb/resize/2017/0113/00501912_20170113.JPG");
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center center;
+        filter: brightness(%); 
+    width: 1920px;
+  }
+
+/*시설소개*/
+.Facility_info{
+      padding-top: 100px;
+      padding-bottom: 100px;
+      width: 100%;
+      display: inline-block;
+     }
+  h4{
+    font-size: 40px;
+    margin-left: 204px;
+    margin-bottom: 10px;
+      }
+ .F-info1{
+    width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+    display: inline-block;
+    }
+  .F-image1{
+      display: inline-block;
+      width: 900px;
+      height: 600px;
+      margin-left: 204px;
+      margin-bottom: 120px;
+        }
+  .F-desc1{
+      display: inline-block;
+      float: right;
+      color: white;
+      width: 600px;
+      height: 600px;
+      background-color: #eb3c41;
+      padding: 50px;
+      margin-right: 214px;
+    }
+    .F-desc1 h3{
+          font-size: 40px;
+          line-height: 34px;
+          text-align: center;
+        }
+    .F-desc1 p{
+          font-size: 28px;
+          line-height: 50px;
+          vertical-align: top;
+        }
+
+ .F-info2{
+    width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+    display: inline-block;
+    }
+  .F-image2{
+      display: inline-block;
+      width: 900px;
+      height: 600px;
+      margin-right: 200px;
+      margin-bottom: 120px;
+        }
+  .F-desc2{
+      display: inline-block;
+      float: left;
+      color: white;
+      width: 600px;
+      height: 600px;
+      background-color: #2667f7;
+      padding: 50px;
+      margin-left: 204px;
+    }
+    .F-desc2 h3{
+          font-size: 40px;
+          line-height: 34px;
+          text-align: center;
+        }
+    .F-desc2 p{
+          font-size: 28px;
+          line-height: 50px;
+          vertical-align: top;
+        }
+
+ .F-info3{
+    width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+    display: inline-block;
+    }
+  .F-image3{
+      display: inline-block;
+      width: 900px;
+      height: 600px;
+      margin-left: 204px;
+      margin-bottom: 120px;
+        }
+  .F-desc3{
+      display: inline-block;
+      float: right;
+      color: #3D3A37;
+      width: 600px;
+      height: 600px;
+      background-color: #fedf24;
+      padding: 50px;
+      margin-right: 214px;
+    }
+    .F-desc3 h3{
+          font-size: 40px;
+          line-height: 34px;
+          text-align: center;
+        }
+    .F-desc3 p{
+          font-size: 28px;
+          line-height: 50px;
+          vertical-align: top;
+        }
+
+ .F-info4{
+    width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+    display: inline-block;
+    }
+  .F-image4{
+      display: inline-block;
+      width: 900px;
+      height: 600px;
+      margin-right: 204px;
+      margin-bottom: 120px;
+        }
+  .F-desc4{
+      display: inline-block;
+      float: left;
+      color: white;
+      width: 600px;
+      height: 600px;
+      background-color: #eb3c41;
+      padding: 50px;
+      margin-left: 204px;
+    }
+    .F-desc4 h3{
+          font-size: 40px;
+          line-height: 34px;
+          text-align: center;
+        }
+    .F-desc4 p{
+          font-size: 28px;
+          line-height: 50px;
+          vertical-align: top;
+        }
+
+ .F-info5{
+    width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+    display: inline-block;
+    }
+  .F-image5{
+      display: inline-block;
+      width: 900px;
+      height: 600px;
+      margin-left: 204px;
+        }
+  .F-desc5{
+      display: inline-block;
+      float: right;
+      color: white;
+      width: 600px;
+      height: 600px;
+      background-color: #2667f7;
+      padding: 50px;
+      margin-right: 214px;
+    }
+    .F-desc5 h3{
+          font-size: 40px;
+          line-height: 34px;
+          text-align: center;
+        }
+    .F-desc5 p{
+          font-size: 28px;
+          line-height: 50px;
+          vertical-align: top;
+        }
+
+/*지도*/
+  .map{
+        background-color: #fedf24;
+        height: 1042px;
+      width: 1920px;
+       }
+  .map-image{
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 80px;
+      width: 1000px;
+      display: block;
+    }
+
+/*와라*/
+ .come{
+      height: 458px;
+      width: 1920px;
+      background-color: #2667f7;
+    }
+ .come-image{
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+ }
+    h1{
+      margin-top: 150px;
+      padding-top: 150px;
+      margin-left: 120px;
+      font-size: 52px;
+    }
+
+ h2{
+  text-align: center;
+      margin-left: 150px;
+  color: white;
+  font-size: 42px;
+    }
+
+/*푸터*/
+  #footer{
+         width: 1920px;
+         padding: 50px;
+         padding-left: 204px;
+         background-color: #4B4B4B;
+         text-decoration: none;
+        color: #f6f6f6;     }
+   #footer a{
+    text-decoration: none;
+         color: #f6f6f6;
+         margin-left: 0px;
+       }
+  .media-image_1 img{
+       width: 170px;
+       height: 32px;     }
+    #footer h1{       
+      margin-top: 150px; 
+      padding-top: 150px; 
+      font-size: 18px;   }
+
+
+</style>
+
+<body>
+
+<!--네비바-->
+ <div class="navibar">
+      <a href="http://www.kpu.ac.kr/intro/intro03.html" id="logo">
+        <img src="https://i.ibb.co/Gx69F0K/2.png" height="35">
+      </a>
+      <ul id="menu">
+        <li><a href="sns.html">sns</a></li>
+        <div id="container">
+   <ul class="menu">
+       <li><a href="index.html">학부소개</a>
+         <ul class="sub" style="display: none;">
+            <li><a href="교육과정.html">교육과정</a></li>
+         </ul>
+         </li>
+   </div>
+        <li><a href="공모전&졸업작품.html">공모전&amp;졸업작품</a></li>
+        <li><a href="시설소개2.html">시설소개</a></li>
+        <li><a href="뉴스&이벤트.html">뉴스&amp;이벤트</a></li>
+      </ul>
+ </div>
+
+  <div class="header"></div>
+
+<div class="Facility_info">
+   <h4>시설소개</h4><br><br>
+
+    <div class="F-info1">
+      <img class="F-image1" src="https://image.chosun.com/sitedata/image/201512/30/2015123002890_0.jpg" alt="">
+      <div class="F-desc1">
+       <br> <h3>디자인학부 사무실</h3><br>
+        <p>2011년 메신저 앱으로 시작한 LINE은 전 세계에서 가장 빠르게 성장한 글로벌 메신저 플랫폼으로, 이제는 메신저를 넘어 사람과 사람, 기업, 서비스를 연결하는 허브 역할을 하고 있습니다.</p>
+      </div>
+    </div>
+
+    <div class="F-info2">
+      <img class="F-image2" src="https://i.ibb.co/cT99jJT/6.png" alt="">
+      <div class="F-desc2">
+       <br> <h3>강의실</h3><br>
+        <p>2011년 메신저 앱으로 시작한 LINE은 전 세계에서 가장 빠르게 성장한 글로벌 메신저 플랫폼으로, 이제는 메신저를 넘어 사람과 사람, 기업, 서비스를 연결하는 허브 역할을 하고 있습니다.</p>
+      </div>
+    </div>
+
+    <div class="F-info3">
+      <img class="F-image3" src="https://i.ibb.co/n6jfSJ2/2.png" alt="">
+      <div class="F-desc3">
+       <br> <h3>실험실</h3><br>
+        <p>2011년 메신저 앱으로 시작한 LINE은 전 세계에서 가장 빠르게 성장한 글로벌 메신저 플랫폼으로, 이제는 메신저를 넘어 사람과 사람, 기업, 서비스를 연결하는 허브 역할을 하고 있습니다.</p>
+      </div>
+    </div>
+
+    <div class="F-info4">
+      <img class="F-image4" src="https://i.ibb.co/hWw950d/3.png" alt="">
+      <div class="F-desc4">
+       <br> <h3>자습공간</h3><br>
+        <p>2011년 메신저 앱으로 시작한 LINE은 전 세계에서 가장 빠르게 성장한 글로벌 메신저 플랫폼으로, 이제는 메신저를 넘어 사람과 사람, 기업, 서비스를 연결하는 허브 역할을 하고 있습니다.</p>
+      </div>
+    </div> 
+
+    <div class="F-info5">
+      <img class="F-image5" src="https://i.ibb.co/z62NBBs/9.png" alt="">
+      <div class="F-desc5">
+       <br> <h3>휴게장소</h3><br>
+        <p>2011년 메신저 앱으로 시작한 LINE은 전 세계에서 가장 빠르게 성장한 글로벌 메신저 플랫폼으로, 이제는 메신저를 넘어 사람과 사람, 기업, 서비스를 연결하는 허브 역할을 하고 있습니다.</p>
+      </div>
+    </div>
+
+</div>
+
+<br><br><br><br><br><br>
+
+<div class="map"><h1>시설 평면도</h1>
+ <img class="map-image" src="https://i.ibb.co/dL1r2pr/image.png" alt="">
+  </div>
+
+<div class="come"><br><br><br><br><br>
+ <img class="come-image" src="https://i.ibb.co/2hQmMPX/2.png" alt=""><h2>입학정보 홈페이지 바로가기!</h2>
+  </div>
+
+<div id="footer">
+    <div class="container">
+      <div class="sidebar-column col-md-12">
+          <aside id="media_image-1" class="widget widget_media_image"></aside>
+
+         <div class="textwidget"><p><a href="http://ibook.kpu.ac.kr/Viewer/OZKGMW4FRY2L" target="_blank" rel="noopener noreferrer"><strong>개인정보처리방침</strong></a> | <strong><a href="http://www.kpu.ac.kr/front/boardlist.do?bbsConfigFK=575&amp;amp;siteGubun=14&amp;amp;menuGubun=1" target="_blank" rel="noopener noreferrer">개인정보목적외이용제공대장</a></strong> | <strong><a href="http://www.kpu.ac.kr/gopage/main/gonomalnotice.jsp?siteGubun=1&amp;bbsConfigFK=357&amp;pkid=61538&amp;menuGubun=1" target="_blank" rel="noopener noreferrer">정보보호실천수칙</a></strong></p>
+         </div><br>
+    <p>15073 경기도 시흥시 산기대학로 237 (정왕동) 한국산업기술대학교 공학관 A동<br>
+    학부 행정실: 031-8041-0660 | 학교대표전화: 031-8041-1000 | 입학안내: 1588-2036</p><br>
+    <p>Copyright© 2020 KPU DESIGN ENGINEERING. ALL RIGHTS RESERVED.</p>
+          </aside>
+       </div>
+    </div>  
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,382 @@
+<html>
+<head>
+  <title>졸업작품 더보기</title>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+   <script type="text/javascript">
+         $(function(){
+         $("ul.sub").hide();
+         $("ul.menu li").hover(function(){
+            $("ul:not(:animated)",this).slideDown("fast");
+            },
+            function(){
+               $("ul",this).slideUp("fast");
+            });
+      });   
+   </script>
+</head>
+<style>
+  #container{display: inline-block;
+   }
+       ul.menu li{ display: inline-block;
+         float: left;
+         width: 120px;
+         height: 48px;
+          }
+      ul.menu li a{
+         display: block;
+         line-height: 48px;
+         text-indent: 25px;
+         font-weight: bold;
+         color: #eee;
+         text-decoration: none;
+         }
+      ul.menu li a:hover{
+         background-color: #EB3C41;
+         padding: 0px;
+         }
+      
+      ul.menu{
+         padding-top: 20px;
+         zoom: 1;
+         }
+      ul{ padding:0;}
+
+      .sub{
+        margin-left: -30px;
+
+      }
+
+     
+
+*{ font-family: 'Noto Sans KR', sans-serif;
+    margin:0;
+   box-sizing: border-box;
+    }
+  {
+    box-sizing: border-box;
+     margin:0px;
+     padding:0px;
+    }
+  body {
+  margin: 0;
+}
+/*네비바*/
+.navibar{
+  width: 100%;
+  height: 88px;
+  background-color:#3D3A37;
+}
+.navibar #logo{
+  line-height:100px;
+  padding-left: 32px;
+}
+.navibar #menu{
+  float:right;
+  list-style:none;
+  padding:0;
+  margin:0;
+  display: inline-block;
+   padding-right: 32px;
+}
+ul{padding: 0;}
+
+.navibar #menu li{
+  float:left;
+  margin-left:30px;
+  line-height:88px;
+}
+.navibar #menu li a{
+  color:#FFFFFF;
+  font-size:18px;
+  text-decoration:none;
+  font-weight: ;
+  }
+.navibar #menu li a:hover{
+    background-color: #EB3C41;
+   
+}
+
+  b{
+  background-color:#eb3c41;
+  padding: 33px;
+}
+
+  .header{
+  height: 600px;
+  background-image:url("https://i.postimg.cc/63KKgnzm/20201215-030057.png");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center center;
+
+  
+}
+.yellow{
+  height: 500px;
+  width:100%;
+  background-color:#FEDF24;
+  margin:0px;
+
+ 
+}
+  h2{
+  color:#707070;
+  text-align: center;
+  display:inline-block;
+ 
+  margin-top:157px;
+  font-size:40px;
+}
+
+.white{
+  background-color: gray;
+  height:2383px;
+  width:1000px;
+  margin-top:-191px;
+
+}
+
+ a{
+   display: inline;
+    font-size:20px;
+    text-decoration: none;
+    color: black;
+    
+   }
+    .product{
+      text-align: left;
+      width: 250px;
+      color: #545454;
+      text-decoration: none;
+      display: block;
+      float: left;
+     
+     margin-left:75px;
+     margin-top: 75px;
+
+    }
+    .product-name{
+      color: #545454;
+      text-decoration: none;
+      margin-top: 32px;
+      margin-bottom: 6px;
+      font-size: 20PX;
+    }
+    .product-price{
+      color: #545454;
+      text-decoration: none;
+      font-weight: bold;
+       font-size: 20PX;
+
+    }
+    .product-price2{
+      color: #545454;
+      text-decoration: none;
+       font-weight: bold;
+       font-size: 20PX;
+    }
+    .Products{
+      margin-left: auto;
+      margin-right: auto;
+      
+
+    }
+        .product-list{
+      width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+       background-color:white;
+          margin-top:-191px;
+          height:1200px;
+
+    }
+    .clearfix{
+      clear: both;
+    }
+   .number{
+    padding: 20px;
+   }
+
+/*푸터*/
+  #footer{
+         margin-top: 100px;
+         width:100%;
+         padding: 50px;
+         padding-left: 204px;
+         background-color: #4B4B4B;
+         text-decoration: none;
+        color: #f6f6f6;     }
+   #footer a{
+    text-decoration: none;
+         color: #f6f6f6;
+         margin-left: 0px;
+       }
+  .media-image_1 img{
+       width: 170px;
+       height: 32px;     }
+    #footer h1{       
+      margin-top: 150px; 
+      padding-top: 150px; 
+      font-size: 18px;   }
+
+
+@media (min-width: 768px) {
+   .Facility_info{
+        margin-right: auto;
+        margin-left: auto;
+        position: center;
+        width: 100%;
+        }
+  }
+
+@media (min-width: 992px) {
+     .Facility_info{
+        margin-right: auto;
+        margin-left: auto;
+        position: center;
+        width: 100%;
+        }
+
+    .number{
+     margin-top: 50px;
+      
+      display: inline-block;
+    }
+</style>
+
+<body>
+<!--네비바-->
+ <div class="navibar">
+      <a href="http://www.kpu.ac.kr/intro/intro03.html" id="logo">
+        <img src="https://i.ibb.co/Gx69F0K/2.png" height="35">
+      </a>
+      <ul id="menu">
+        <li><a href="sns.html">sns</a></li>
+        <div id="container">
+   <ul class="menu">
+       <li><a href="index.html">학부소개</a>
+         <ul class="sub" style="display: none;">
+            <li><a href="교육과정.html">교육과정</a></li>
+         </ul>
+         </li>
+   </div>
+        <li><a href="공모전&졸업작품.html">공모전&amp;졸업작품</a></li>
+        <li><a href="시설소개2.html">시설소개</a></li>
+        <li><a href="뉴스&이벤트.html">뉴스&amp;이벤트</a></li>
+      </ul>
+ </div>
+
+
+  <div class="header"></div>
+  <center><div class="yellow">
+  <h2>졸업작품</h2></div></center>
+  
+ 
+  <div class="Products">
+  <div class="product-list">
+    <a href="#" class="product">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqUvhjazScfr27-L5qmMbhGLXVGdfxrgpX-w&usqp=CAU.jpg" width="200px">
+      <div class="product-name">미디어디자인공학과</div>
+      <div class="product-price">고다은</div>
+      <div class="product-price2">
+SCULPTURE</div>
+    </a>
+  
+    
+    <a href="#" class="product">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNsxpGszK7dRqLqADPa8GRfWUS0i6hhRjxww&usqp=CAU.jpg" width="200px">
+      <div class="product-name">산업디자인공학과</div>
+      <div class="product-price">심예진</div>
+      <div class="product-price2">SMART HANGER</div>
+    </a>
+  
+    
+    <a href="#" class="product">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyTat6ryi7eJDxQtgaTx2ArHNBc6n5kUbekw&usqp=CAU.jpg" width="200px">
+      <div class="product-name">미디어디자인공학과</div>
+      <div class="product-price">오주영</div>
+      <div class="product-price2">POPKONTV</div>
+    </a>
+  
+    
+    <a href="#" class="product">
+      <img src="https://i.ibb.co/J74cXV8/1.png" width="200px">
+      <div class="product-name">산업디자인공학과</div>
+      <div class="product-price">민혜원</div>
+      <div class="product-price2">ECHO</div>
+    </a>
+  
+    
+    <a href="#" class="product">
+      <img src="https://enter.kku.ac.kr/upload/editor_upFile1515644765963_b_img.jpg" width="200px" height="200">
+      <div class="product-name">산업디자인공학과</div>
+      <div class="product-price">양현지</div>
+      <div class="product-price2">BABY INCUBATOR</div>
+    </a>
+  
+    
+    <a href="#" class="product">
+      <img src="https://i.postimg.cc/fbQPxrJY/11890-5c8058c558c8a.jpg" width="200px">
+      <div class="product-name">산업디자인공학과</div>
+      <div class="product-price">서달미</div>
+      <div class="product-price2">NIPPLE MASK</div>
+    </a>
+    
+     <a href="#" class="product">
+      <img src="https://i.ibb.co/f4tjbjZ/2.png" width="200px">
+      <div class="product-name">승주미디어디자인공학과</div>
+      <div class="product-price">ㅈ</div>
+      <div class="product-price2">Prep-LABs</div>
+    </a>
+    
+     <a href="#" class="product">
+      <img src="https://i.ibb.co/48Vyq5x/3.png" width="200px">
+      <div class="product-name">미디어디자인공학과</div>
+      <div class="product-price">서한주</div>
+      <div class="product-price2">Hormongraph</div>
+    </a>
+    
+     <a href="#" class="product">
+      <img src="https://i.ibb.co/0jWwGR6/5.png" width="200px">
+      <div class="product-name">미디어디자인공학과</div>
+      <div class="product-price">차민주</div>
+      <div class="product-price2">WHEELING</div>
+    </a>
+  
+    
+    
+    
+    <div class="clearfix"></div>
+  </div>
+  
+
+<center><div class="number">
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+</div></center>
+
+
+
+
+<div id="footer">
+    <div class="container">
+      <div class="sidebar-column col-md-12">
+          <aside id="media_image-1" class="widget widget_media_image"></aside>
+
+         <div class="textwidget"><p><a href="http://ibook.kpu.ac.kr/Viewer/OZKGMW4FRY2L" target="_blank" rel="noopener noreferrer"><strong>개인정보처리방침</strong></a> | <strong><a href="http://www.kpu.ac.kr/front/boardlist.do?bbsConfigFK=575&amp;amp;siteGubun=14&amp;amp;menuGubun=1" target="_blank" rel="noopener noreferrer">개인정보목적외이용제공대장</a></strong> | <strong><a href="http://www.kpu.ac.kr/gopage/main/gonomalnotice.jsp?siteGubun=1&amp;bbsConfigFK=357&amp;pkid=61538&amp;menuGubun=1" target="_blank" rel="noopener noreferrer">정보보호실천수칙</a></strong></p>
+         </div><br>
+    <p>15073 경기도 시흥시 산기대학로 237 (정왕동) 한국산업기술대학교 공학관 A동<br>
+    학부 행정실: 031-8041-0660 | 학교대표전화: 031-8041-1000 | 입학안내: 1588-2036</p><br>
+    <p>Copyright© 2020 KPU DESIGN ENGINEERING. ALL RIGHTS RESERVED.</p>
+          </aside>
+       </div>
+    </div>  
+</div>
+
+  </div></div></body></html>
+  

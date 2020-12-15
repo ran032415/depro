@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="Ko-kr">
+<head>
+    <meta charset="UTF-8">
+    <title>main</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+   <script type="text/javascript">
+         $(function(){
+         $("ul.sub").hide();
+         $("ul.menu li").hover(function(){
+            $("ul:not(:animated)",this).slideDown("fast");
+            },
+            function(){
+               $("ul",this).slideUp("fast");
+            });
+      });   
+   </script>
+ 
+ <style>
+ #container{display: inline-block;
+   
+         
+         
+         
+     }
+       
+      
+      ul.menu li{ display: inline-block;
+         float: left;
+         width: 120px;
+         height: 48px;
+         
+         
+        
+         }
+      ul.menu li a{
+         display: block;
+         
+        
+         line-height: 48px;
+         text-indent: 25px;
+         font-weight: bold;
+         color: #eee;
+         text-decoration: none;
+         }
+      ul.menu li a:hover{
+         background-color: #EB3C41;
+         }
+      .sub{margin-left: -30px;
+         
+         }
+      ul.menu{padding-top: 20px;
+           padding-right: 17px;
+
+        
+      
+         zoom: 1;
+         }
+        ul{ padding:0;}
+
+      ul.menu:after{
+         height: 0;
+         visibility: hidden;
+         content: ".";
+         display: block;
+         clear: both;
+
+         }
+
+*{ font-family: 'Noto Sans KR', sans-serif;
+    margin:0;
+
+}
+.navibar{
+  width: 1920px;
+  height: 88px;
+  
+  background-color:#3D3A37;
+}
+.navibar #logo{
+  line-height:100px;
+  padding-left: 32px;
+}
+.navibar #menu{
+  float:right;
+  list-style:none;
+  padding:0;
+  margin:0;
+  display: inline-block;
+   padding-right: 32px;
+}
+.navibar #menu li{
+  float:left;
+  margin-left:30px;
+  line-height:88px;
+}
+.navibar #menu li a{
+  color:#FFFFFF;
+  font-size:18px;
+  text-decoration:none;
+  font-weight: ;
+  }
+
+.navibar #menu li a:hover{
+    background-color: #EB3C41;
+}
+
+
+
+
+  #mbti-wrapper{
+   
+    height: 2344px;
+    width: 1920px;
+    background-color: white;
+    }
+
+    #img-frame{
+        width:1116px;
+        height: 1938px;
+        background-color: white;
+        position: relative;
+        top:10px;
+        left: 404px;
+
+    }
+        #mbti-wrapper h1{
+            font-size: 48px;
+            margin-top: 74px;
+            margin-bottom: 116px;
+            text-align: center;
+        }
+
+        .img-wrapper{
+            width: 350px;
+            height: 424px;
+            position: absolute;
+            cursor: pointer;
+        }
+            .img-wrapper img{
+                width: inherit;
+                height: inherit;
+            }
+
+                .img1{
+                    top: 0px;
+                    left: 0px;
+                }
+
+                .img2{
+                    top: 0px;
+                    left: 383px;
+                }
+
+                .img3{
+                    top: 0px;
+                    right: 0px;
+                }
+
+                .img4{
+                    top: 646px;
+                    left: 0px;
+                }
+
+                .img5{
+                    top: 646px;
+                    left: 383px;
+                }
+
+                .img6{
+                    top: 646px;
+                    right: 0px;
+                }
+
+                .img7{
+                    bottom: 222px;
+                    left: 0px;
+                }
+                .img8{
+                    bottom: 222px;
+                    left: 383px;
+                }
+                .img9{
+                    bottom: 222px;
+                    right: 0px;
+                }
+                .professor_name {
+                    font-size: 24px;
+                }
+                .professor_position {
+                    font-size: 20px;
+                }
+                .professor_major {
+                    font-size: 18px;
+                }
+
+/*프로필사진 모서리 곡선 */
+                .profile{
+                    border-radius: 5%;
+                }
+
+.img-overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity:0;
+    transition: opacity 0.25s;
+    border-radius: 20%;
+}
+
+.img-overlay > *{
+    transform: translateY(20px);
+    transition: transfrom 0.25s;
+}
+
+.img-overlay:hover{
+    opacity:1;
+}
+
+.img-overlay:hover > *{
+    transform: translateY(0px);
+}
+
+.img-title{
+    font-size:30px;
+    text-align:center;
+}
+
+.img-content{
+    font-size:15px;
+    text-align:center;
+    text-decoration:none;
+    color:white;
+}
+
+
+  #event-wrapper{
+        height: 1310px;
+        width: 1920px;
+        background-image: url("https://i.postimg.cc/66v8WFM9/blue.png");
+        background-size:cover;
+        background-repeat: none;
+        }
+
+        .event-title1 {
+            font-family: 'Noto Sans KR', sans-serif;
+            color:#ffffff;
+            font-size: 44px;
+            margin-left: 404px;
+            margin-bottom: 0px;
+            position: relative;
+            top: 260px;
+            left: 100px;
+            display: inline-block;
+        }
+        .event-title2{
+            font-family: 'Noto Sans KR', sans-serif;
+            color:#ffffff;
+            margin-left: 404px;
+            font-size: 28px;
+            margin-top: 0px;
+            position: relative;
+            top: 265px;
+        }
+        .event_speaker{
+            position: absolute;
+            margin-left: 20px;
+            padding-top: 25px;
+
+        }
+        #event-frame{
+            width:1112px;
+            height: 720px;
+            position: relative;
+            top: 130px;
+            left: 404px;
+
+        } 
+            .event-wrapper{
+                width: 356px;
+                height: 269px;
+                position: absolute;
+                cursor: pointer;
+            }
+                .img-wrapper img{
+                    width: inherit;
+                    height: inherit;
+                }
+                
+                .event1{
+                    bottom: 296px;
+                    left: 0px;
+                }
+                .event2{
+                    bottom: 296px;
+                    left: 378px; 
+                }
+                .event3{
+                    bottom: 296px;
+                    right: 0px;
+                }
+                .event4{
+                    bottom: 0px;
+                    left: 0px;
+                }
+                .event5{
+                    bottom: 0px;
+                    left: 378px;
+                }
+                .event6{
+                    bottom: 0px;
+                    right: 0px;
+                }
+/*프로필사진 모서리 곡선 */
+                .event{
+                    border-radius: 5%;
+                }
+
+                .one{
+                    width: 1920px;
+                    height: 900px;
+                    background-image: url(https://i.postimg.cc/FKLr5cj0/3.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .one-text{
+                    padding-top: 600px;
+                    padding-left: 180px;
+                    color: #E0E0E0;
+
+
+                }
+                .one-text h1{
+                    font-size: 65px;
+
+                }
+
+                 .one-text p{
+                    font-size: 30px;
+
+                 }
+
+                 .yellow{width: 1920px; 
+                    height:1080px;
+
+
+
+                    background-image: url(https://i.postimg.cc/HncWhy4g/yellow.png);
+                    background-size: cover;
+                    background-position: center center;
+                 }
+                 .yellow h1{
+
+                 }
+                 .gonhak{  padding-top: 30px;
+                    width: 912px;
+                    padding: 38px;
+                    text-align: center;
+                      border-bottom: 2px solid #3D3A37;
+                       display: block;
+                    margin-left: auto;
+                    margin-right:auto;
+                 }
+                 .gonhak h1{
+                    font-size: 40px;
+                 }
+                 .gonhak p {
+                    font-size: 22px;
+
+                 }
+
+                 .two{ padding-top: 236px;
+                    width: 1512px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right:auto;
+                 }
+                 .block-1{
+                    width: 618px;
+                    height: 618px;
+                    float: left;
+                    padding-right: 224px;
+                    color: #3D3A37;
+
+                     
+                 }
+                 .block-1 h1{padding-bottom: 14px;
+
+                 }
+                 .block-1 h2{padding-bottom: 46px;
+
+                 }
+                 .block-1 p { font-size: 18px;
+                     line-height: 28px;
+
+                 }
+                 .block-2{color: #3D3A37;
+                    width: 618px;
+                    height: 618px;
+                    padding-left:32px; 
+                    
+                   
+
+                 float: left;}
+
+                 .block-2 h1{padding-bottom: 14px;
+
+                 }
+                 .block-2 h2{padding-bottom: 46px;
+
+                 }
+                 .block-2 p { font-size: 18px;
+                    line-height: 28px;
+
+                 }
+
+
+
+ .offer-yellow{width: 1920px;
+        height: 458px;
+        background-color: #FEDF24;
+        
+       
+    }
+    .offer-bubble{
+        display:block;
+        margin: 0px auto;
+        position: relative;
+        top:100px;
+    }
+    .offer-text{
+        font-weight: 800;
+        font-size: 40px;
+        text-align: center;
+        position: relative;
+        top: -45px;
+    }
+    .offer-link{
+        font-weight: 800;
+        font-size: 40px;
+        text-align: center;
+        position: relative;
+        top: 70px;
+        left: 200px;
+         display: inline-block;
+    }
+
+    .offer-link a{ 
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        padding-left: 800px;
+
+    }
+
+
+div {
+    display: block;
+}
+
+ #footer{
+      width:1920px;
+      padding-top:50px;
+      padding-bottom: 50px; 
+      background-color: #4B4B4B;
+      text-decoration: none;
+      color: #f6f6f6;
+
+    }   
+     .textwidget a{text-decoration: none;
+    color: #f6f6f6;
+    margin-left: 0px;}   
+
+.textwidget{
+    padding-bottom: 20px;
+}
+
+
+.media-image_1 img{ 
+      width: 170px;
+      height: 32px;
+    }
+     #footer h1{
+      margin-top: 150px;
+      padding-top: 150px;
+     
+      font-size: 52px;
+    }
+.container{
+    padding-left: 204px;
+}
+
+ </style>
+
+</head>
+<body>
+
+<!--네비바-->
+ <div class="navibar">
+      <a href="http://www.kpu.ac.kr/intro/intro03.html" id="logo">
+        <img src="https://i.ibb.co/Gx69F0K/2.png" height="35">
+      </a>
+      <ul id="menu">
+        <li><a href="sns.html">sns</a></li>
+        <div id="container">
+   <ul class="menu">
+       <li><a href="index.html">학부소개</a>
+         <ul class="sub" style="display: none;">
+            <li><a href="교육과정.html">교육과정</a></li>
+         </ul>
+         </li>
+   </ul></div>
+        <li><a href="공모전&amp;졸업작품.html">공모전&amp;졸업작품</a></li>
+        <li><a href="시설소개2.html">시설소개</a></li>
+        <li><a href="뉴스&amp;이벤트.html">뉴스&amp;이벤트</a></li>
+      </ul>
+ </div>
+
+    <div class="one">
+        <div class="one-text">
+        <h1>새내기 어서와~!</h1>
+        <p>새내기들, 미래의 새내기를 위한 한국산업기술대 디자인공학부 설명서</p>
+        </div>
+
+    </div>
+
+
+    <div class="yellow">
+        <div class="gonhak">
+        <h1>디자인공학부</h1>
+        <p>산학 융합으로 차별화된 실무 중심의 융합형 디자인공학부 실현</p>
+        </div>
+
+
+        <div class="two">
+        <div class="block-1">
+            <h1>산업디자인공학전공</h1>
+            <h2>사용자 중심 디자인과 창의적 디자인 사고를 기반으로 한 실무형 인재육성</h2>
+            <p>디자인 기술이 창의적인 디자인 발상법과 공학적 마인드의 통학적 접근법을 추구하는 시대로 바뀜에 따라 단순히 심미적 역할에만 머물렀던 디자인 개념에서 확장해 4차 산업혁명 기술 분야를 선도하고자 디자인학부가 디자인공학부로 변경되었습니다.</p>
+            
+        </div>
+        <div class="block-2">
+             <h1>미디어디자인공학전공</h1>
+            <h2>사용자 중심 디자인 원리에 기반하여 인터랙티브 미디어를 구현할 수 있는 실무형 인재육성</h2>
+            <p>미디어디자인공학전공은 사용자중심 디자인 원리에 기발하여 인터랙티브 미디어를 구현할 수 있는 실무형 인재 육성을 목표로 합니다. 모바일앱, 웹, 체감형 콘텐츠를 활용한 인터랙티브 미디어를 구현하기 위해 사용자 조사와 분석, UX/UI, 콘텐츠 기획, 2D/3D 그래픽 디자인, 프로그래밍 개발 과정을 통합적으로 수행할 수 있는 디자이너를 양성합니다.</p>
+            
+        </div>
+        </div>
+    </div>
+
+
+    <div id="mbti-wrapper">
+        <h1>교수님과 MBTI 궁합 맞춰보기</h1>
+        <div id="img-frame">
+            <!--첫번째 줄-->
+            <div class="img-wrapper img1">
+               <img class="profile" src="https://i.postimg.cc/506tF1Pg/kim.png" alt="ISFJ">
+               <div class="img-overlay">
+                   <div class="img-title">ISFJ</div>
+                    <a class="img-content" href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-isfj">read more</a>
+               </div>
+                <div class="professor_name">김억</div>
+                <div class="professor_position">학부장/교수</div>
+                <div class="professor_major">디자인 전략 및 기획<br>
+                서비스 및 PSS 디자인 <br>도시 공공 디자인</div>
+            </div>
+
+            <div class="img-wrapper img2">
+                <img class="profile" src="https://i.postimg.cc/xT7P4yNT/2.png" alt="ESTP">
+                <div class="img-overlay">
+                    <div class="img-title">ESTP</div>
+                     <a class="img-content" href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-estp">read more</a>
+                </div>
+                <div class="professor_name">구기설</div>
+                <div class="professor_position">교수</div>
+                <div class="professor_major">제품디자인 <br>선행디자인 및 디자인 매니지먼트 <br>유니버설디자인</div>
+            </div>
+
+            <div class="img-wrapper img3">
+                <img class="profile" src="https://i.postimg.cc/Gmxxm0S9/3.png" alt="ENFJ">
+                <div class="img-overlay">
+                    <div class="img-title">ENFJ</div>
+                     <a class="img-content" href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-enfj">read more</a>
+                </div>
+                <div class="professor_name">권오재</div>
+                <div class="professor_position">부교수</div>
+                <div class="professor_major">UX/UI디자인, 서비스 디자인<br>인터랙션 디자인(LF Prototype 제작)<br>유니버설 디자인</div>
+            </div>
+            <!--두번째 줄-->
+            <div class="img-wrapper img4">
+                <img class="profile" src="https://i.postimg.cc/1XFpxbqm/4.png" alt="ESFP">
+                <div class="img-overlay">
+                    <div class="img-title">ISFJ</div>
+                     <a class="img-content" href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-isfj">read more</a>
+                </div>
+                <div class="professor_name">이문환</div>
+                <div class="professor_position">조교수</div>
+                <div class="professor_major">UX/UI디자인 <br>인터랙션 디자인</div>
+            </div>
+
+            <div class="img-wrapper img5">
+                <img class="profile" src="https://i.postimg.cc/GppG34yS/5.png" alt="INTJ">
+                <div class="img-overlay">
+                    <div class="img-title">INTJ</div>
+                     <a class="img-content" href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-intj">read more</a>
+                </div>
+                <div class="professor_name">장영주</div>
+                <div class="professor_position">교수</div>
+                <div class="professor_major">제품디자인·브랜드 개발<br>
+               디자인 조직과 협동적 Process <br>제품디자인과 산업기술의 통합적 시스템 구축</div>
+            </div>
+
+            <div class="img-wrapper img6">
+                <img class="profile" src="https://i.postimg.cc/mr6MPT3Z/6.png" alt-"ESTJ">
+                <div class="img-overlay">
+                    <div class="img-title">ESTJ</div>
+                     <a class="img-content" href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-estj">read more</a>
+                </div>
+                <div class="professor_name">조남주</div>
+                <div class="professor_position">교수</div>
+                <div class="professor_major">가구 디자인 엔지니어링
+                  <br>지속가능한 공공디자인 <br>제품디자인 엔지니어링</div>
+            </div>
+            <!--세번째 줄-->
+            <div class="img-wrapper img7">
+                <img class="profile" src="https://i.postimg.cc/nz6g4jb3/7.png" alt="INFP">
+                <div class="img-overlay">
+                    <div class="img-title">INFP</div>
+                     <a class="img-content" href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-infp">read more</a>
+                </div>
+                <div class="professor_name">한민섭</div>
+                <div class="professor_position">조교수</div>
+                <div class="professor_major">마이크로 초정밀 미세 가공 공정 <br>Equipment H/W 설계 및 시뮬레이션 <br>융복합 가공 시스템 설계</div>
+            </div>
+
+            <div class="img-wrapper img8">
+                <img class="profile" src="https://i.postimg.cc/CMqWFNkX/8.png" alt="INTP">
+                <div class="img-overlay">
+                    <div class="img-title">INTP</div>
+                     <a class="img-content" href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-intp">read more</a>
+                </div>
+                <div class="professor_name">홍성수</div>
+                <div class="professor_position">교수</div>
+                <div class="professor_major">로봇, 제품, 산업기기, 의료기기 설계 및 디자인 <br>문화 예술 기술, 스마트 제품 개발 <br>3D 디지털디자인 / 시뮬레이션</div>
+            </div>
+
+            <div class="img-wrapper img9">
+                <img class="profile" src="https://i.postimg.cc/mgbqyWJW/9.png" alt="ENTP">
+                <div class="img-overlay">
+                    <div class="img-title">ENTP</div>
+                     <a class="img-content" href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-entp">read more</a>
+                </div>
+                <div class="professor_name">김한종</div>
+                <div class="professor_position">조교수</div>
+                <div class="professor_major">Web 기반 3D 그래픽스<br>
+                 SW 시스템 디자인 / 프론트엔드 개발 <br>
+                 디자인 지원 도구 개발</div>
+            </div>
+        </div>
+    </div>
+
+    
+ <div id="event-wrapper">
+        <h1 class="event-title1">학부행사</h1>
+        <h2 class="event-title2">학업과 교류 중심의 대학생활을 위한 다양한 활동 지원!</h2>
+        <div id="event-frame">
+            <img src="https://i.postimg.cc/vB1c6KMt/speaker.png" class="event_speaker">
+
+            <!--첫번째 줄-->
+            <div class="event-wrapper event1">
+                <img src="https://i.postimg.cc/SRQf9g2k/1.png" class="event">
+            </div>
+            <div class="event-wrapper event2">
+                <img src="https://i.postimg.cc/m2vFfdLk/2.png" class="event">
+            </div>
+            <div class="event-wrapper event3">
+                <img src="https://i.postimg.cc/cJZg6r8N/3.png" class="event">
+            </div>
+            <!--두번째 줄-->
+            <div class="event-wrapper event4">
+                <img src="https://i.postimg.cc/PxJq8ZX0/4.png" class="event">
+            </div>
+            <div class="event-wrapper event5">
+                <img src="https://i.postimg.cc/rpF4QDyN/5.png" class="event">
+            </div>
+            <div class="event-wrapper event6">
+                <img src="https://i.postimg.cc/v86VqFyk/6.png" class="event">
+            </div>
+        </div>
+    </div>
+
+
+  <div class="offer-yellow">
+        <img class="offer-bubble" src="https://i.postimg.cc/Fs09fLdq/image2.png">
+        <div class="offer-text">디자인과...오지 않을래...?☆</div>
+        <div class="offer-link"><a href="http://iphak.kpu.ac.kr/intro.html">입학정보 홈페이지 바로가기!</a></div>
+
+    </div>
+
+
+ <div id="footer">
+    <div class="container">
+      <div class="sidebar-column col-md-12">
+          <aside id="media_image-1" class="widget widget_media_image"></aside>
+
+         <div class="textwidget"><p><a href="http://ibook.kpu.ac.kr/Viewer/OZKGMW4FRY2L" target="_blank" rel="noopener noreferrer"><strong>개인정보처리방침</strong></a> | <strong><a href="http://www.kpu.ac.kr/front/boardlist.do?bbsConfigFK=575&amp;amp;siteGubun=14&amp;amp;menuGubun=1" target="_blank" rel="noopener noreferrer">개인정보목적외이용제공대장</a></strong> | <strong><a href="http://www.kpu.ac.kr/gopage/main/gonomalnotice.jsp?siteGubun=1&amp;bbsConfigFK=357&amp;pkid=61538&amp;menuGubun=1" target="_blank" rel="noopener noreferrer">정보보호실천수칙</a></strong></p>
+         </div>
+    <p>15073 경기도 시흥시 산기대학로 237 (정왕동) 한국산업기술대학교 공학관 A동<br>
+    학부 행정실: 031-8041-0660 | 학교대표전화: 031-8041-1000 | 입학안내: 1588-2036</p><br>
+    <p>Copyright© 2020 KPU DESIGN ENGINEERING. ALL RIGHTS RESERVED.</p>
+          
+       </div>
+    </div>  
+</div>
+    
+
+</body>
+</html>
